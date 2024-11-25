@@ -13,7 +13,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}) # CORS設定を更新
+CORS(app, resources={r"/*": {"origins": "tech0-gen-8-step3-testapp-node1-11.azurewebsites.net:3000"}}) # CORS設定を更新
 
 @app.route('/', methods=['GET'])
 def hello():
